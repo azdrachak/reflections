@@ -1,0 +1,23 @@
+Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+A: Если предыдущая версия работала без ошибок и после исправления стала сбоить, то нужно искать ошибку.
+Можно сравнивать, открыв два документа и смотреть попеременно в старый и новый.
+Но проще использовать специальные инструменты.
+Для Mac и Linux это diff (diff -u file1 file2)
+Для Windows это FC (fc file1 file2)
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+A: Доступ к итории редактирования файла помогает отследить сделанные изменения в документе с течением врмени.
+Особенно это полезно при написании кода, когда один и тот же файл редактируют несколько человек.
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+A: Ручной коммит позволяет более гибко выбрать момент. Это позволяет коммитать логические части работы и избегать засорения истории коммитов.
+С другой стороны, в ручной коммит вмешивается человеческий фактор - можно забыть коммитать долгое время или коммитать слишком часто.
+При автоматическом коммите работа всегда будет сохранена, но просмотр истории изменения будет более сложным из-за неясной логической связи между коммитами.
+Также при только автоматическом коммите может быть поеряна часть работы, если нет возможности совершить коммит вручную.
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+A: Git, в основном, предназначен для программирования. А в проектах, связанных с программированием часто встречается задача отслеживания версий взаимозависимых файлов. 
+
+Q: How can you use the commands git log and git diff to view the history of files?
+A: git log показывает историю коммитов с их ID
+git diff показывает различия между двумя коммитами.
