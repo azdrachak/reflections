@@ -1,0 +1,5 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+A: При инициализации папки добавляется скрытаф папка .git, в которой хранится информация о новом репозитории и версионности файлов.
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+A: Стэджинг область не является частью репозитория или рабочей ппки. Это виртуальная область, куда добавляются файлы для дальнейшего их коммита.
